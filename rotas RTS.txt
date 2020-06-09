@@ -1,0 +1,15 @@
+RT- LAN PARA PROVEDOR
+
+ip route 200.200.20.0 255.255.255.0 10.0.0.2
+ipv6 route 2001:db8:f0f0::/64 2001:db8:5ea1:2::
+ipv6 route 2001:db8:f0f0::/64 2001:db8:5ea1:2::1
+ipv6 unicast-routing
+
+
+RT-PROVEDOR PARA LAN
+
+ip route 192.168.0.0 255.255.255.0 10.0.0.1
+ipv6 route 2001:db8:cafe::/64 2001:db8:5ea1:2::
+ipv6 route 2001:db8:cafe::/64 2001:db8:5ea1:2::0
+ipv6 unicast-routing
+
